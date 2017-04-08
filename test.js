@@ -35,7 +35,8 @@ else {
 */
 
 
-/*
+/* While Loops
+
 var myAge = 3;
 while(myAge<11){
     console.log("we're less than 11");
@@ -43,3 +44,81 @@ while(myAge<11){
 }
 document.writeln("we're equal or over 11");
 */
+
+/* For Loops
+
+var links =document.getElementsByTagName("a");
+
+for (i=1; i<=links.length; i++){
+    console.log("this is link number "+i);
+}
+*/
+
+/*
+for (i=0; i<10; i++){
+
+    if (i===2 || i===3){
+        continue;
+    }
+    console.log("line "+i);
+
+    if (i===7){
+        break;
+    }
+}
+console.log("we broke out of the loop");
+*/
+
+/*
+function color () {
+    var links = document.getElementsByTagName("a");
+
+    for(i=0; i<links.length; i++)
+    {
+        links[i].className="link-0"+(i+1);
+    }
+}
+
+
+function color1 () {
+    var links = document.getElementsByTagName("a");
+
+    for(i=0; i<links.length; i++)
+    {
+        links[i].className="link-"+(i+1);
+    }
+}
+*/
+var z = false;
+var link = document.getElementById("link1")
+
+function color(link) {
+    z=!z;
+    if (z) {
+        link.className = "link-1";
+    }
+    else{
+        link.className = "l";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
