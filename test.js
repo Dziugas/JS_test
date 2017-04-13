@@ -104,9 +104,7 @@ document.writeln("vidurkis yra: " + result);
 var z = false;
 var link = document.getElementById("link1");
 
-
-
-link.onmouseover = function color (){
+link.onmouseover = function (){
     z=!z;
     if (z) {
         this.className = "link-1";
@@ -116,7 +114,7 @@ link.onmouseover = function color (){
     }
 };
 
-link.onmouseout = function color (){
+link.onmouseout = function (){
     z=!z;
     if (z) {
         this.className = "link-1";
