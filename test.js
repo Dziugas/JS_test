@@ -89,10 +89,22 @@ function color1 () {
     }
 }
 */
-var z = false;
-var link = document.getElementById("link1")
 
-function color(link) {
+/*
+function average(a, b) {
+
+    var average = (a + b) / 2;
+    return average;
+}
+
+var result = average(8,18);
+document.writeln("vidurkis yra: " + result);
+*/
+
+var z = false;
+var link = document.getElementById("link1");
+
+link.onmouseover = function color (){
     z=!z;
     if (z) {
         link.className = "link-1";
@@ -100,18 +112,22 @@ function color(link) {
     else{
         link.className = "l";
     }
-}
+};
 
+link.onmouseout = function color (){
+    z=!z;
+    if (z) {
+        link.className = "link-1";
+    }
+    else{
+        link.className = "l";
+    }
+};
 
-
-
-
-
-
-
-
-
-
+var kuku = document.getElementsByTagName("h1");
+kuku.onmouseover = function(){
+    alert("kusskusas");
+};
 
 
 
