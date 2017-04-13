@@ -104,31 +104,34 @@ document.writeln("vidurkis yra: " + result);
 var z = false;
 var link = document.getElementById("link1");
 
+
+
 link.onmouseover = function color (){
     z=!z;
     if (z) {
-        link.className = "link-1";
+        this.className = "link-1";
     }
     else{
-        link.className = "l";
+        this.className = "l";
     }
 };
 
 link.onmouseout = function color (){
     z=!z;
     if (z) {
-        link.className = "link-1";
+        this.className = "link-1";
     }
     else{
-        link.className = "l";
+        this.className = "l";
     }
 };
 
-var kuku = document.getElementsByTagName("h1");
-kuku.onmouseover = function(){
+/*
+var alertas = document.getElementsByTagName("h1")[0];
+alertas.onmouseover = function(){
     alert("kusskusas");
 };
-
+*/
 
 
 
