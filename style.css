@@ -26,6 +26,8 @@ h1{
 }
 
 #tekstas{
+    width: 400px;
+    margin: auto;
     border-style: dashed;
     padding:10px;
     max-height: 80px;
