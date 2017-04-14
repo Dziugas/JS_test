@@ -3,40 +3,49 @@ body{
     font-family:Arial;
 }
 
-.link-01{
-    background-color: aquamarine;
-}
-.link-02{
-    background-color: darkgrey;
-}
-.link-03{
-    background-color: red;
-}
-.link-04{
-    background-color: yellowgreen;
-}
-.link-05{
-    background-color: cadetblue;
-}
-.link-06{
-    background-color: mediumvioletred;
+.link-1 {
+    background-color: lightgrey;
 }
 
-.link-1{
-    background-color: lightgrey;
+#content:hover{
+    font-size: 20px;
+    transition: font-size 1s;
 }
-.link-2{
-    background-color: lightgrey;
+#content{
+    font-size: 12px;
+    transition: font-size 1s;
 }
-.link-3{
-    background-color: lightgrey;
+
+h1:hover{
+    background-color: rebeccapurple;
+    transition: background-color 1s;
 }
-.link-4{
-    background-color: lightgrey;
+
+h1{
+    transition: background-color 1s;
 }
-.link-5{
-    background-color: lightgrey;
+
+#tekstas{
+    border-style: dashed;
+    padding:10px;
+    max-height: 80px;
+    overflow: hidden;
+    transition: max-height 0.7s;
 }
-.link-6{
-    background-color: lightgrey;
+
+#tekstas.open{
+    max-height: 1000px;
+    transition: max-height 0.7s;
+}
+
+#button{
+    background-color: rebeccapurple;
+    color: floralwhite;
+    font-size: 20px;
+    display: block;
+    width: 140px;
+    padding: 10px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    cursor: pointer;
 }

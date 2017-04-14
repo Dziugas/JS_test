@@ -101,40 +101,48 @@ var result = average(8,18);
 document.writeln("vidurkis yra: " + result);
 */
 
+
 var z = false;
 var link = document.getElementById("link1");
 
-link.onmouseover = function (){
+var color = function (){
     z=!z;
     if (z) {
         this.className = "link-1";
-    }
-    else{
-        this.className = "l";
-    }
-};
 
-link.onmouseout = function (){
-    z=!z;
-    if (z) {
-        this.className = "link-1";
     }
     else{
         this.className = "l";
+
     }
-};
+}
+
+link.onmouseover = color;
+link.onmouseout = color;
+
+
 
 /*
+
 var alertas = document.getElementsByTagName("h1")[0];
 alertas.onmouseover = function(){
     alert("kusskusas");
 };
 */
 
+var content = document.getElementById("tekstas");
+var button = document.getElementById("button");
 
-
-
-
+button.onclick = function() {
+    if(content.className == "open")    {
+        content.className = "";
+        button.innerHTML = "Show More";
+    }
+    else{
+        content.className = "open";
+        button.innerHTML = "Show less";
+    }
+}
 
 
 
