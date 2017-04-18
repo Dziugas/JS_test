@@ -105,8 +105,8 @@ document.writeln("vidurkis yra: " + result);
 var z = false;
 var link = document.getElementById("link1");
 
-var color = function (){
-    z=!z;
+var color = function () {
+    z = !z;
     if (z) {
         this.className = "link-1";
 
@@ -120,8 +120,6 @@ var color = function (){
 link.onmouseover = color;
 link.onmouseout = color;
 
-
-
 /*
 
 var alertas = document.getElementsByTagName("h1")[0];
@@ -129,21 +127,32 @@ alertas.onmouseover = function(){
     alert("kusskusas");
 };
 */
-
-var content = document.getElementById("tekstas");
+var content = document.getElementById("tekstas1");
 var button = document.getElementById("button");
 
-button.onclick = function() {
-    if(content.className == "open")    {
-        content.className = "";
-        button.innerHTML = "Show More";
+    button.onclick = function() {
+        if(content.className == "open")    {
+            content.className = "";
+            button.innerHTML = "Show More";
+        }
+        else{
+            content.className = "open";
+            button.innerHTML = "Show less";
+        }
+    };
+
+
+var colourChanger = document.getElementById("postas3");
+var colours = ["rebeccapurple", "lightgreen", "lightgrey"];
+var counter = 0;
+
+function changeColour(){
+    if (counter>=colours.length){
+        counter=0;
     }
-    else{
-        content.className = "open";
-        button.innerHTML = "Show less";
-    }
-}
+    colourChanger.style.background = colours[counter];
+    counter++;
+};
 
-
-
+setInterval(changeColour, 2000);
 
