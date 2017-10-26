@@ -1,2 +1,2 @@
-# JStest
-JS pamokos
+Eksperimentai su JS, CSS, PHP forma etc...
+Noriu viską pamauti ant Django.
